@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.gd-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  user-select: none;
+}
+
+.gd-container-game {
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gd-garden-image {
+  width: 56px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gd-garden-image img {
+  max-width: 100%;
+}
+
+.gd-sendBank-item {
+  position: relative;
+  width: 90px;
+  margin-bottom: 3px;
+}
+
+.gd-sendBank-item:hover {
+  transform: scale(1.1);
+}
+
+.gd-sendBank-item-price {
+  width: 20px;
+  position: absolute;
+  right: 15px;
+  bottom: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.gd-sendBank-item img {
+  width: 100%;
+}
+
+.gd-sendBank-item img:nth-child(1) {
+  display: block;
+}
+
+.gd-sendBank-item img:nth-child(2) {
+  display: none;
+}
+
+.gd-sendBank-item.active img:nth-child(1) {
+  display: none;
+}
+
+.gd-sendBank-item.active img:nth-child(2) {
+  display: block;
+}
+
+.gd-bank {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.gd-bank-image {
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+}
+
+.gd-bank-image:hover {
+  transform: scale(1.1);
+}
+
+.gd-water-drop-image {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.gd-bank-price {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: yellow;
+}
+
+.gd-quit {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  width: 100px;
+  /* background-color: azure; */
+  border-radius: 2px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.gd-quit img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.gd-start {
+  position: absolute;
+  left: 60%;
+  top: 400px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.gd-start h1 {
+  width: 200px;
+  color: white;
+  font-family: monospace;
+  position: absolute;
+  top: 5px;
+  left: 100px;
+  z-index: 10;
+}
+.gd-start h1:hover {
+  color: yellow;
+}
+
+.gd-start img {
+  position: absolute;
+}
+
+.gd-start img:nth-child(2) {
+  top: -10px;
+  left: 5px;
+  z-index: 10;
+  animation: loading 4s infinite;
+  animation-delay: 2s;
+}
+
+.gd-start img:nth-child(3) {
+  top: -22px;
+}
+
+.gd-start img:nth-child(6) {
+  top: -79px;
+  left: 250px;
+  animation: loading 4s infinite;
+}
+
+.gd-start img:nth-child(5) {
+  left: 120px;
+  top: -70px;
+  animation: loading 4s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes loading {
+  to {
+    opacity: 0;
+  }
+}
